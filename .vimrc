@@ -8,13 +8,13 @@ set autoindent
 set ic
 set hls 
 
-colorscheme molokai
-
-execute pathogen#infect()
+syntax enable
+set background=dark
+colorscheme solarized
 
 set cursorline
 set cursorcolumn
-hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=black
-hi CursorColumn cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
+
+execute pathogen#infect()
 
 filetype indent on
