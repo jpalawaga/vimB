@@ -12,6 +12,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+nnoremap Q :NumbersToggle<CR>
+
 set cursorline
 set cursorcolumn
 
