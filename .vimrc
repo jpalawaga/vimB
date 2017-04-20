@@ -12,14 +12,17 @@ filetype indent on
 
 " Search fixups: highlighting and case insensitivity
 set ic
-set hls 
+set hls
 
 " Make vim pretty
 syntax enable
 set background=dark
 colorscheme solarized
+highlight ExtraWhitespace ctermbg=red ctermfg=white guibg=#592929
+call matchadd('ExtraWhitespace', '\s\+$', 11)
+
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%101v.\+/
+call matchadd('OverLength', '\%>80v.\+')
 
 " Extra highlighting to make us look 1337
 set cursorline
